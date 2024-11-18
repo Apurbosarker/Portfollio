@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apurbo Sarker Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <div class="logo">MyPortfolio</div>
+      <div class="nav-center">
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+   </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="sec">
+  <header class="hero-section">
+    <div class="hero-content">
+      <h1>Hello, I'm Apurbo Sarker</h1>
+      <p>A passionate developer striving to create innovative solutions.</p>
+      <button class="btn" onclick="document.getElementById('about').scrollIntoView()">Learn More</button>
+    </div>
+  </header>
+  </section>
+
+   <!-- Profile Section -->
+   <section id="about" class="section">
+    <div class="container">
+      <h1>About Me</h1>
+      <div class="profile-container">
+        <div class="profile-section">
+          <img src="images/profile.png" alt="Profile Picture" class="profile-pic">
+        </div>
+        <div class="profile-description">
+          <p>
+            I am Apurbo Sarker, and my hometown is Manikganj, Dhaka. I completed my SSC at Monsur Uddin M/L High School and my HSC at Govt. Debendra College in Manikganj.
+          </p>
+          <p>
+            Currently, I am studying at Daffodil International University in the Department of Computer Science and Engineering. Daffodil International University is a renowned educational institution in Bangladesh known for its quality education and focus on technological advancements.
+          </p>
+          <p>
+            My choice of studying computer science and engineering indicates a strong interest in technology and its applications. This field offers various opportunities to explore programming, software development, data analysis, and other related disciplines.
+          </p>
+          <p>
+            I love my parents very much, and I always try to keep them happy. Being with my parents in all situations of life is my greatest hobby.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- User Profile Section -->
+<section id="user-profile" class="section" style="display: none;">
+    <div class="container">
+      <h1>Welcome, <span id="username-display"></span></h1>
+      <p>Here is your personalized profile page!</p>
+      <button class="btn" onclick="logout()">Logout</button>
+    </div>
+  </section>
+
+  <!-- Login Modal -->
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="hideLogin()">&times;</span>
+      <h2>Login</h2>
+      <form id="loginForm">
+        <label for="login-username">Username</label>
+        <input type="text" id="login-username" required>
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" required>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Signup Modal -->
+  <div id="signup-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="hideSignup()">&times;</span>
+      <h2>Sign Up</h2>
+      <form id="signupForm">
+        <label for="signup-username">Username</label>
+        <input type="text" id="signup-username" required>
+        <label for="signup-password">Password</label>
+        <input type="password" id="signup-password" required>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h1>Skills</h1>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <img src="images/c.png" alt="C">
+          <p>C</p>
+        </div>
+        <div class="skill-card">
+          <img src="images/cpp1.png" alt="C++">
+          <p>C++</p>
+        </div>
+        <div class="skill-card">
+          <img src="images/java.png" alt="Java">
+          <p>Java</p>
+        </div>
+        <div class="skill-card">
+          <img src="images/python.png" alt="Python">
+          <p>Python</p>
+        </div>
+        <div class="skill-card">
+          <img src="images/html1.png" alt="HTML">
+          <p>HTML</p>
+        </div>
+        <div class="skill-card">
+          <img src="images/css1.png" alt="CSS">
+          <p>CSS</p>
+        </div>
+        <div class="skill-card">
+          <img src="images/javascript.png" alt="JavaScript">
+          <p>JavaScript</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Projects Section -->
+<section id="projects" class="section">
+    <div class="container">
+      <h1>Projects</h1>
+      <div class="project-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <a href="https://apurbosarker.github.io/24Bazar_Software_Project/" target="_blank">
+            <img src="images/24bazar.png" alt="24 Bazar Project">
+          </a>
+          <p><strong>24 Bazar</strong></p>
+          <p>The project name is 24_Bazar online shop. 24_Bazar is an online shop project that aims to provide a convenient and efficient platform for customers to purchase a wide range of products.</p>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <img src="images/cc.png" alt="Currency Converter">
+          <p><strong>Currency Converter</strong></p>
+          <p>The project name is Currency Converter. In this project, I use the ‘C’ programming language and also use Greedy Coin Change Algorithm and Insertion Sort Algorithm.</p>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <img src="images/robocar.png" alt="Obstacle-Avoiding Robot Car">
+          <p><strong>Obstacle-Avoiding Robot Car</strong></p>
+          <p>The Obstacle-Avoiding Robot Car focuses on developing a robotic vehicle capable of navigating its environment while avoiding obstacles using sensors and Bluetooth controls.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <div class="container">
+      <h1>Education</h1>
+      <div class="education-grid">
+        <div class="education-card">
+          <img src="images/MLHighSchool.png" alt="School">
+          <p><strong>Monsur Uddin ML High School</strong>, Manikganj (SSC)</p>
+        </div>
+        <div class="education-card">
+          <img src="images/debendra.jpg" alt="College">
+          <p><strong>Govt. Debendra College</strong>, Manikganj (HSC)</p>
+        </div>
+        <div class="education-card">
+          <img src="images/DIU.jpeg" alt="University">
+          <p><strong>Daffodil International University</strong>, Dhaka (B.Sc in CSE)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Blog Section -->
+   <section id="blog" class="section">
+    <div class="container">
+      <h1>Blog</h1>
+      <div class="blog-card">
+        <h2>জীবন যেখানে যেমন || Life is like that || Documentary || Apurbo Sarker || 2022</h2>
+        <p><strong>Watch the Documentary:</strong></p>
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/yGfA3N2-Aco" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p><strong>Description:</strong> This documentary captures the essence of life, exploring its highs and lows, with a focus on real-life stories and experiences. The film emphasizes how life often unfolds unpredictably, teaching us the importance of embracing every moment.</p>
+        <a href="https://www.youtube.com/watch?v=yGfA3N2-Aco" target="_blank" class="btn">Watch on YouTube</a>
+      </div>
+    </div>
+  </section>
+
+
+ <!-- Contact Section -->
+
+<section id="contact" class="section">
+  <div class="container">
+    <h1>Contact Me</h1>
+    <div class="contact-content">
+      <div class="contact-section">
+        <div class="contact-details">
+          <div class="detail-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Dhaka, Bangladesh</p>
+          </div>
+          <div class="detail-item">
+            <i class="fas fa-phone"></i>
+            <p>+880 1571 480 762</p>
+          </div>
+          <div class="detail-item">
+            <i class="fas fa-envelope"></i>
+            <p>apurbo.sarkar.350@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form id="contact-form">
+          <div class="form-group">
+            <input type="text" class="form-control" id="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+             <input type="email" class="form-control" id="email" placeholder="Your Email" required />
+           </div>
+           <div class="form-group">
+            <input type="text" class="form-control" id="mobile" placeholder="Your Mobile Number" required />
+          </div>
+          <div class="form-group">
+             <textarea class="form-control" id="message" placeholder="Your Message" rows="5" required></textarea>
+           </div>
+           <button type="submit" class="btn">Send Message</button>
+        </form>
+       </div>
+   </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <!--<h2>Connect with Me</h2>
+        <p>Phone: 01571480762</p>
+        <p>Email: apurbo15-14719@diu.edu.bd</p>-->
+        <h3>My Social Media</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/apurbo.sarker.9066" target="_blank">
+            <img src="images/FB.png" alt="Facebook">
+          </a>
+          <a href="https://www.linkedin.com/in/apurbo-sarker-68097323a/" target="_blank">
+            <img src="images/linkedin.png" alt="LinkedIn">
+          </a>
+          <a href="https://github.com/Apurbosarker" target="_blank">
+            <img src="images/Github.png" alt="GitHub">
+          </a>
+          <a href="https://www.instagram.com/apurbo_sarker31/" target="_blank">
+            <img src="images/instagram.png" alt="Instagram">
+          </a>
+        </div>
+        <p>&copy; 2024 Apurbo Sarker. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+
+</body>
+</html>
+
+
